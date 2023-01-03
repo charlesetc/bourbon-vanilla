@@ -6,7 +6,7 @@ Ever want to write vanilla JS but miss JSX? Today is your day!
 
 This is what it looks like to use Bourbon Vanilla:
 
-```
+```jsx
 function App() {
     let count = 0
     let countSpan = <span></span>
@@ -29,7 +29,7 @@ root.appendChild(<App />)
 
 And here's one way to compile this:
 
-```
+```bash
 esbuild src/main.jsx \
     --jsx-import-source=bourbon-vanilla \
     --jsx=automatic
