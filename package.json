@@ -1,11 +1,11 @@
 {
   "name": "bourbon-vanilla",
   "version": "1.0.0",
-  "description": "A minimal library to use JSX with vanilla Javascript",
+  "description": "A library to use JSX with vanilla Javascript",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Charles Chamberlain",
   "license": "MIT"
 }
