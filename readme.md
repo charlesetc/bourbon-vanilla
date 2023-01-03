@@ -4,6 +4,14 @@ Hi!
 
 Ever want to write vanilla JS but miss JSX? Today is your day!
 
+## Install
+
+```
+npm install bourbon-vanilla
+```
+
+## Example
+
 This is what it looks like to use Bourbon Vanilla:
 
 ```jsx
@@ -38,9 +46,5 @@ esbuild src/main.jsx \
 ```
 
 Other bundlers should support something similar.
-
-## Install
-
-This isn't on npm (yet). You can clone this repo locally and then install it with `npm install ../path/to/repo`.
 
 That's all! 🥳
