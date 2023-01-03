@@ -37,6 +37,4 @@ esbuild src/main.jsx \
     --jsx=automatic
 ```
 
-I would expect most other bundlers to support a similar configuration.
-
-That's all! 🥳
+Other bundlers should support something similar. That's all! 🥳
