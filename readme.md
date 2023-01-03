@@ -8,23 +8,25 @@ This is what it looks like to use Bourbon Vanilla:
 
 ```jsx
 function App() {
-    let count = 0
-    let countSpan = <span></span>
+  let count = 0;
+  let countSpan = <span>{count}</span>;
 
-    function setCount(newCount) {
-        count = newCount
-        countSpan.textContent = count
-    }
+  function setCount(newCount) {
+    count = newCount;
+    countSpan.textContent = count;
+  }
 
+  return (
     <div>
-        <p>Count: {countSpan}</p>
-        <button onClick={(e) => setCount(count + 1)}>+</button>
-        <button onClick={(e) => setCount(count - 1)}>-</button>
+      <p>Count: {countSpan}</p>
+      <button onClick={(e) => setCount(count + 1)}>+</button>
+      <button onClick={(e) => setCount(count - 1)}>-</button>
     </div>
+  );
 }
 
-const root = document.findElementById("root")
-root.appendChild(<App />)
+const root = document.getElementById("root");
+root.appendChild(<App />);
 ```
 
 And here's one way to compile this:
