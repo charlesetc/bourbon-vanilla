@@ -37,4 +37,10 @@ esbuild src/main.jsx \
     --jsx=automatic
 ```
 
-Other bundlers should support something similar. That's all! 🥳
+Other bundlers should support something similar.
+
+## Install
+
+This isn't on npm (yet). You can clone this repo locally and then install it with `npm install ../path/to/repo`.
+
+That's all! 🥳
