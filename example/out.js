@@ -16,7 +16,6 @@
     if (typeof tag === "function") {
       return tag(props, children);
     }
-    console.log(tag);
     const element = document.createElement(tag);
     Object.entries(props || {}).forEach(([name, value]) => {
       if (name.startsWith("on") && name.toLowerCase() in window) {
@@ -38,14 +37,19 @@
       count = newCount;
       countSpan.textContent = count;
     }
-    return /* @__PURE__ */ jsxs("div", { children: [
-      /* @__PURE__ */ jsxs("p", { children: [
-        "Count: ",
-        countSpan
-      ] }),
-      /* @__PURE__ */ jsx("button", { onClick: (e) => setCount(count + 1), children: "+" }),
-      /* @__PURE__ */ jsx("button", { onClick: (e) => setCount(count - 1), children: "-" })
-    ] });
+    return /* @__PURE__ */ jsxs("div", {
+      children: [
+        /* @__PURE__ */ jsxs("p", { children: ["Count: ", countSpan] }),
+        /* @__PURE__ */ jsx("button", {
+          onClick: (e) => setCount(count + 1),
+          children: "+",
+        }),
+        /* @__PURE__ */ jsx("button", {
+          onClick: (e) => setCount(count - 1),
+          children: "-",
+        }),
+      ],
+    });
   }
   var root = document.getElementById("root");
   root.appendChild(/* @__PURE__ */ jsx(Counter, {}));

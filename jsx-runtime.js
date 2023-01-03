@@ -25,7 +25,6 @@ export function jsx(tag, { children, ...props }) {
   if (typeof tag === "function") {
     return tag(props, children);
   }
-  console.log(tag);
   const element = document.createElement(tag);
   Object.entries(props || {}).forEach(([name, value]) => {
     if (name.startsWith("on") && name.toLowerCase() in window) {
