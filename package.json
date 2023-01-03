@@ -1,0 +1,11 @@
+{
+  "name": "stonefruit",
+  "version": "1.0.0",
+  "description": "A minimal library to use JSX with vanilla Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
