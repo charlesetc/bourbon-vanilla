@@ -3,6 +3,8 @@
 Hi!
 
 Ever want to write vanilla JS but miss JSX? Today is your day!
+Bourbon Vanilla lets you create DOM elements with JSX.
+No reactivity, no magic: the rest is up to you.
 
 ## Example
 
