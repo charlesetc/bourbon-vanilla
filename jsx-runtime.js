@@ -6,8 +6,6 @@ export function Fragment(props, children) {
     for (const child of children || []) {
       fragment.appendChild(child);
     }
-  } else if (children === undefined || children === null) {
-    // do nothing
   } else {
     fragment.appendChild(children);
   }
@@ -15,6 +13,7 @@ export function Fragment(props, children) {
 }
 
 const appendChildren = (parent, children) => {
+  if (children === null || children === undefined) return;
   if (Array.isArray(children)) {
     for (const child of children) {
       appendChildren(parent, child);
