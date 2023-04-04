@@ -2,6 +2,7 @@
 
 export function Fragment(props, children) {
   let fragment = document.createDocumentFragment();
+  debugger;
   if (Array.isArray(children)) {
     for (const child of children || []) {
       fragment.appendChild(child);
